@@ -25,9 +25,9 @@
             android:layout_weight="1"
             android:adjustViewBounds="true"
             android:background="#00000000"
-            android:paddingBottom="1dp"
-            android:paddingStart="5dp"
-            android:scaleType="fitXY"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/signin" />
 
         <LinearLayout
@@ -43,7 +43,8 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="#00000000"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="5dp"
                 android:src="@drawable/welfare" />
 
             <ImageButton
@@ -53,7 +54,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="#00000000"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:src="@drawable/action" />
         </LinearLayout>
 
@@ -64,9 +65,9 @@
             android:layout_weight="1"
             android:adjustViewBounds="true"
             android:background="#00000000"
-            android:paddingBottom="1dp"
-            android:paddingStart="1dp"
-            android:scaleType="fitXY"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/redpacket" />
     </LinearLayout>
 

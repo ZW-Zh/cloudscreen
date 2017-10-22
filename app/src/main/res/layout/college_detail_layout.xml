@@ -20,7 +20,7 @@
             android:layout_height="1dp"
             android:background="@drawable/wire"
             android:layout_alignBottom="@+id/collegecontent"
-            android:layout_marginBottom="1dp"
+            android:layout_marginBottom="5dp"
             />
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"

@@ -7,6 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.TypedValue;
 import android.view.View;
 
 import com.android.zzw.cloudscreen.Adapter.AdapterFragment;
@@ -53,7 +54,6 @@ public class MyViewPagerTab {
         recyclerView.setLayoutManager(linearLayoutManager);
         ContentAdapter mcontentAdapter = new ContentAdapter(content);
         recyclerView.setAdapter(mcontentAdapter);
-
         mcontentAdapter.setOnItemClickListener(new ContentAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
@@ -88,6 +88,7 @@ public class MyViewPagerTab {
         ContentAdapter.MyViewHolder contentAdapter = (ContentAdapter.MyViewHolder) recyclerView.getChildViewHolder(v);
         contentAdapter.gettextview().setTextColor(Color.parseColor("#71a4e8"));
         contentAdapter.gettextview().setBackground(null);
+        contentAdapter.gettextview().setTextSize(12);
         contentAdapter.getCursor().setVisibility(View.INVISIBLE);
     }
     private void setText(int currIndex){
@@ -96,6 +97,7 @@ public class MyViewPagerTab {
         View v=manager.getChildAt(currIndex);
         ContentAdapter.MyViewHolder contentAdapter = (ContentAdapter.MyViewHolder) recyclerView.getChildViewHolder(v);
         contentAdapter.gettextview().setTextColor(Color.parseColor("#ffffff"));
+        contentAdapter.gettextview().setTextSize(15);
         contentAdapter.gettextview().setBackgroundResource(R.drawable.contentbg);
     }
     private void setCursor(int currIndex){

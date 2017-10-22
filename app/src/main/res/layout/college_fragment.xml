@@ -8,8 +8,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="10dp"
-            android:paddingBottom="10dp"
+            android:layout_marginStart="10dp"
             android:textSize="15sp"
             android:textColor="#ffffff"
             android:text="@string/college"
@@ -22,8 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingEnd="10dp"
-            android:paddingBottom="10dp"
+            android:layout_marginEnd="10dp"
             android:textSize="15sp"
             android:textColor="#ffffff"
             android:id="@+id/collegedeteil"
@@ -35,6 +33,7 @@
             android:shadowDy="2"/>
     </RelativeLayout>
     <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/collegeinformation"/>

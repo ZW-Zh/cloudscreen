@@ -26,8 +26,9 @@ public class CollegeMoreFragment extends Fragment {
         College college= (College) getArguments().getSerializable("key");
         webView= (WebView) view.findViewById(R.id.morewebview);
         webView.setBackgroundColor(0);
-        WebSettings webSettings= webView.getSettings(); // webView: 类WebView的实例
-        webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);  //就是这句
+        WebSettings settings = webView.getSettings();
+        settings.setUseWideViewPort(true);
+        settings.setLoadWithOverviewMode(true);
         if (college != null) {
             webView.loadDataWithBaseURL(null,college.getNewsContentHtml(),"text/html", "utf-8", null);
         }

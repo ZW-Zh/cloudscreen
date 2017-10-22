@@ -17,6 +17,7 @@ import com.android.zzw.cloudscreen.R;
 
 public class DetailFragment extends Fragment {
     private WebView webView;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class DetailFragment extends Fragment {
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
         webView.setBackgroundColor(0);
+
 
         /*((DetailActivity)getActivity()).getDetailmodellmp().getMyViewPagerTab().setOnItemClickListener(new MyViewPagerTab.OnItemClickListener() {
             @Override

@@ -112,7 +112,7 @@ public class WenkeDetailModelImpl implements WenkeDetailModel{
         right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (currentPage!=fragmentArrayList.size()-1){
+                if (currentPage!=totalPage-1){
                     viewPager.setCurrentItem(currentPage+1);
                 }
             }

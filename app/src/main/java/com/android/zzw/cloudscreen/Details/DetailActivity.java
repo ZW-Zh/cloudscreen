@@ -2,6 +2,7 @@ package com.android.zzw.cloudscreen.Details;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -34,13 +35,11 @@ public class DetailActivity extends AppCompatActivity {
         HomePageModelImpl homePageModel =new HomePageModelImpl();
         homePageModel.setHomePageAd(DetailActivity.this,adviewPager);
         detailmodellmp = new DetailModellmp();
+
         detailmodellmp.setDetailContent(DetailActivity.this,recyclerView,viewPager);
         detailmodellmp.setDetailFragment();
     }
 
-    public DetailModellmp getDetailmodellmp() {
-        return detailmodellmp;
-    }
 
     private void initViews(){
         adviewPager= (ViewPager) findViewById(R.id.deteilad);

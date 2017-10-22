@@ -22,6 +22,5 @@ public class CollegeDetailFragment extends Fragment {
        CollegeDetailModelImpl collegeDetailModel=new CollegeDetailModelImpl();
         collegeDetailModel.setCollegeDetail(CollegeDetailFragment.this);
         return view;
-
     }
 }
